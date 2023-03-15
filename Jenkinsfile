@@ -9,7 +9,7 @@ pipeline {
         }
         stage('构建docker镜像') {
             steps {
-                 sh 'sudo docker build . -t jenkins_docker_example:jenkins_docker_example'
+                 sh 'whoami && docker build . -t jenkins_docker_example:jenkins_docker_example'
             }
         }
         stage('启动docker容器') {
