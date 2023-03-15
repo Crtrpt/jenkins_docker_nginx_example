@@ -14,7 +14,7 @@ pipeline {
         }
         stage('启动docker容器') {
             steps {
-                 sh 'docker run  -d -p10080:8080 jenkins_docker_example:jenkins_docker_example '
+                 sh 'docker run  -d -p10080:9090 jenkins_docker_example:jenkins_docker_example '
             }
         }
     }
