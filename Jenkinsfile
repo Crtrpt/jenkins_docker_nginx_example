@@ -9,12 +9,12 @@ pipeline {
         }
         stage('构建docker镜像') {
             steps {
-                 sh 'docker build . -t JenkinsDockerExample:JenkinsDockerExample'
+                 sh 'docker build . -t jenkins_docker_example:jenkins_docker_example'
             }
         }
         stage('启动docker容器') {
             steps {
-                 sh 'docker run JenkinsDockerExample:JenkinsDockerExample -p10080:8080'
+                 sh 'docker run jenkins_docker_example:jenkins_docker_example -p10080:8080'
             }
         }
     }
