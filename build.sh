@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-
-go build  .\cmd\main.go -o bin\start
+go mod tidy
+go build -o bin\start  .\cmd\main.go 
