@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('构建二进制制品') {
             steps {
-                 sh './build.sh'
+                 sh 'chmod +x ./build.sh && ./build.sh'
             }
         }
         stage('构建docker镜像') {
