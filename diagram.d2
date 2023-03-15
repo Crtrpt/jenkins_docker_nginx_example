@@ -1,0 +1,8 @@
+gitsever->jenkins:"webhook"
+jenkins<->gitsever:"git pull"
+jenkins->"appliction" :"build"
+jenkins->"nginx":"update"
+jenkins->"docker":"build"
+jenkins->"docker hub":"publish"
+jenkins->k8s:"deply"
+k8s<-"docker hub":"pull"
