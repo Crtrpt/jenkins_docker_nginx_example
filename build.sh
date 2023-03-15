@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-go build -o bin\start .\cmd\main.go
+go build  .\cmd\main.go -o bin\start
