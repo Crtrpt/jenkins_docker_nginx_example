@@ -10,6 +10,5 @@ go build -o bin\start .\cmd\main.go
 ```
 sudo groupadd docker
 sudo usermod -aG docker jenkins
-newgrp docker					
-docker run hello-world	
+newgrp docker
 ```		
