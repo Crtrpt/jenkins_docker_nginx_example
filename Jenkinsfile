@@ -14,7 +14,7 @@ pipeline {
         }
          stage('更新nginx配置文件 和重启nginx') {
             steps {
-                 sh 'cp nginx.conf /opt/nginx/conf/*'
+                 sh 'cp example.conf /opt/nginx/conf/'
             }
         }
          stage('销毁老的docker容器') {
