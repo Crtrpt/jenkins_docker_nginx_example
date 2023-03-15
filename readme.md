@@ -1,5 +1,7 @@
 这是一个示例项目
 
+![上图](./diagram.svg)
+
 # 构建
 
 go build -o bin\start .\cmd\main.go
@@ -21,3 +23,5 @@ A token header token: TOKEN_HERE
 A Authorization: Bearer header Authorization: Bearer TOKEN_HERE
 ```
 外部请求相应的url 即可触发相应的构建
+
+# 注意更新配置之后需要重启nginx的配置
