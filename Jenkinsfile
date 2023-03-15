@@ -19,7 +19,7 @@ pipeline {
         }
          stage('销毁老的docker容器') {
             steps {
-                 sh 'docker  rm -f  ``docker ps  | grep jenkins_docker_example:jenkins_docker_example | cut -c 1-12``'
+                 sh 'docker  rm -f  `docker ps  | grep jenkins_docker_example:jenkins_docker_example | cut -c 1-12`'
             }
         }
         stage('启动docker容器') {
