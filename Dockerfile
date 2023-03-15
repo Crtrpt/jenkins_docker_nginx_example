@@ -5,4 +5,4 @@ COPY ./bin /app
 
 EXPOSE 80
 
-CMD [ "start" ]
+CMD [ "./start" ]
